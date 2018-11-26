@@ -2,7 +2,7 @@ import React from 'react';
 import HamburgerButton from './HamburgerButton';
 
 const NavBar = props => (
-  <header className="navbar">
+  <div className="navbar">
     <nav className="navbar-navigation">
       <div className="navbar-logo"></div>
       <div className="spacer"></div>
@@ -13,7 +13,7 @@ const NavBar = props => (
       </div>
 
     </nav>
-  </header>
+  </div>
 );
 
 export default NavBar;

@@ -1,8 +1,21 @@
+html {
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 1200px;
+  overflow: scroll;
+}
+
 .navbar {
   width: 100%;
   top: 0;
   left: 0;
-  position: fixed;
   background-color: white;
   height: 120px;
 }
@@ -42,10 +55,6 @@
   color: red;
 }
 
-.main {
-  margin-top: 60px;
-}
-
 .hamburger-button {
   display: flex;
   flex-direction: column;
@@ -67,4 +76,16 @@
   width: 10px;
   height: 1px;
   background-color: black;
+}
+
+.carousel {
+  max-width: 1440px;
+  width: 100vw;
+  height: 600px;
+  border: 1px solid red;
+}
+
+.image-slide {
+  height: 100%;
+  width: 100%;
 }

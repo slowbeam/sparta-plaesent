@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.scss';
 import NavBar from './components/NavBar';
+import Carousel from './components/Carousel';
 
 
 class App extends Component {
@@ -8,9 +9,7 @@ class App extends Component {
     return (
       <div className="App">
         <NavBar />
-        <main className="main">
-          <p>this is the page content!</p>
-        </main>
+        <Carousel />
       </div>
     );
   }
