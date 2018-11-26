@@ -4,14 +4,14 @@
   left: 0;
   position: fixed;
   background-color: white;
-  height: 50px;
+  height: 120px;
 }
 
 .navbar-navigation {
   display: flex;
   height: 100%;
   align-items: center;
-  padding: 0 1rem;
+  padding: 0 140px;
 }
 
 .spacer {
@@ -28,6 +28,9 @@
 
 .navigation-items {
   display: flex;
+  font: bold 11px Arial, sans-serif;
+  color: #767676;
+  align-items: center;
 }
 
 .navigation-items div {
@@ -41,4 +44,27 @@
 
 .main {
   margin-top: 60px;
+}
+
+.toggle-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 25px;
+  width: 15px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button-line {
+  width: 15px;
+  height: 1px;
+  background-color: black;
 }

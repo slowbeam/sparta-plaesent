@@ -1,4 +1,5 @@
 import React from 'react';
+import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
 
 const NavBar = props => (
   <header className="navbar">
@@ -8,7 +9,7 @@ const NavBar = props => (
       <div className="navigation-items">
         <div>212.555.5555</div>
         <div>LOGIN</div>
-        <div>Hamburger</div>
+        <div><DrawerToggleButton /></div>
       </div>
 
     </nav>
