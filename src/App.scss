@@ -82,10 +82,14 @@ html {
   max-width: 1440px;
   width: 100vw;
   height: 600px;
-  border: 1px solid red;
 }
 
 .image-slide {
+  height: 100%;
+  width: 100%;
+}
+
+.image-slide img {
   height: 100%;
   width: 100%;
 }

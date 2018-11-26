@@ -3,7 +3,7 @@ import React from 'react';
 const ImageSlide = ({ url }) => {
 
   const styles = {
-    backgroundImage: `url('../images/hero-panel.png')`,
+    backgroundImage: `url(${url})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center'
   }
