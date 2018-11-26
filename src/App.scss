@@ -13,6 +13,7 @@ html {
 }
 
 .navbar {
+  position: sticky;
   width: 100%;
   top: 0;
   left: 0;
@@ -81,7 +82,12 @@ html {
 .carousel {
   max-width: 1440px;
   width: 100vw;
-  height: 600px;
+  height: 700px;
+}
+
+.my-carousel.carousel.carousel-slider {
+  height: 100%;
+  background: transparent;
 }
 
 .image-slide {
@@ -90,6 +96,22 @@ html {
 }
 
 .image-slide img {
-  height: 100%;
+  object-fit: cover;
+}
+
+.my-carousel .carousel .control-dots {
+  position: relative;
+  bottom: -10px;
+  text-align: center;
   width: 100%;
+  margin: 10px 0;
+}
+
+.my-carousel .carousel .control-dots .dot {
+  background: #e6e6e6;
+  box-shadow: none;
+}
+
+.my-carousel .carousel .control-dots .dot.selected {
+  background: #e0e0e0;
 }
