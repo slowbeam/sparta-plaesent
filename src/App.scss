@@ -1,3 +1,44 @@
-.App {
-  text-align: center;
+.navbar {
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: white;
+  height: 50px;
+}
+
+.navbar-navigation {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.navbar-logo {
+  cursor: pointer;
+  background-image: url('./images/logo.png');
+  background-size: cover;
+  height: 34px;
+  width: 196px;
+}
+
+.navigation-items {
+  display: flex;
+}
+
+.navigation-items div {
+  padding: 0 0.5rem;
+  cursor: pointer;
+}
+
+.navigation-items div:hover {
+  color: red;
+}
+
+.main {
+  margin-top: 60px;
 }
