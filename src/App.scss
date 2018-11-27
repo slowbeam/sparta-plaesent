@@ -27,13 +27,14 @@ html {
 }
 
 .navbar {
-  position: sticky;
+  position: fixed;
   width: 100%;
   max-width: $max_width;
   top: 0;
   left: 0;
   background-color: white;
   height: 120px;
+  z-index: 20;
 }
 
 .navbar-navigation {
@@ -107,10 +108,11 @@ html {
   max-width: $max_width;
   width: 100vw;
   height: 680px;
+  top: 120px;
 }
 
 .my-carousel .carousel .carousel-slider {
-  top: 0;
+  top: 120px;
   height: 680px;
   background: transparent;
 }
@@ -155,6 +157,7 @@ html {
 
 .overlay-text {
   padding-left: calc(100vw * .1);
+  padding-right: calc(100vw * .1);
 }
 
 .overlay h1 {
@@ -218,9 +221,22 @@ html {
     top: calc(100vw * .4);
   }
 
-  .overlay-text {
-    padding-right: calc(100vw * .1);
+  .overlay h1 {
+    font-size: 55px;
+    line-height: 40px;
   }
+
+  .overlay h3 {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .overlay p {
+    font-size: 15px;
+    margin-top: -20px;
+
+  }
+
 
 }
 
@@ -228,6 +244,27 @@ html {
 
   .carousel {
     height: calc(100vw * .9);
+    top: 50px;
+  }
+
+  .overlay {
+    top: calc(100vw * .2)
+  }
+
+  .overlay h1 {
+    font-size: 50px;
+    line-height: 40px;
+  }
+
+  .overlay h3 {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .overlay p {
+    font-size: 15px;
+    margin-top: -20px;
+
   }
 
   .my-carousel .carousel .carousel-slider {
