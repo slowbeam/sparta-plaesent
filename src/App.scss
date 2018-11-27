@@ -193,19 +193,25 @@ html {
   }
 }
 
-@media only screen and (min-width: 450px) and (max-width: 907px) {
+@media only screen and (min-width: 747px) and (max-width: 907px) {
+
+
+
+}
+
+@media only screen and (min-width: 450px) and (max-width: 747px) {
 
   .carousel {
-    height: calc(100vw * .75);
+    height: calc(100vw * .9);
   }
 
   .my-carousel .carousel.carousel-slider {
-    height: calc(100vw * .75);
+    height: calc(100vw * .9);
     overflow: hidden;
   }
 
   .image-slide img {
-    height: calc(100vw * .6);
+    height: calc(100vw * .75);
   }
 
 }
@@ -213,11 +219,11 @@ html {
 @media only screen and (max-width: 450px) {
 
   .carousel {
-    height: calc(100vw * .75);
+    height: calc(100vw * .9);
   }
 
   .my-carousel .carousel .carousel-slider {
-    height: calc(100vw * .75);
+    height: calc(100vw * .9);
   }
 
   .navbar {
@@ -234,7 +240,7 @@ html {
   }
 
   .image-slide img {
-    height: calc(100vw * .6);
+    height: calc(100vw * .75);
   }
 
 
