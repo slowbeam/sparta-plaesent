@@ -2,31 +2,25 @@ import React, { Component } from 'react';
 import './App.scss';
 import NavBar from './components/NavBar';
 import ReactResponsiveCarousel from './components/ReactResponsiveCarousel';
+import Overlay from './components/Overlay';
+import Footer from './components/Footer';
 
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <NavBar />
-        <div className="carousel-container">
-          <div className="overlay">
-            <div className="overlay-text">
-              <h1>Screening:</h1>
-              <br/>
-              <h1>DVF Secret Agent Part 2</h1>
-              <h3>October 15, 2017</h3>
-              <p>
-                Join us for a private screening of DVF Secret Agent Part 2
-                <br/>
-                with our special guest, director Peter Lindberg
-              </p>
-            </div>
+      <div className="wrapper">
+        <div className="App">
+          <NavBar />
+          <div className="carousel-container">
+            <Overlay />
+            <ReactResponsiveCarousel />
           </div>
-          <ReactResponsiveCarousel />
         </div>
-
+        <div className="height-spacer"></div>
+        <Footer />
       </div>
+
     );
   }
 }
