@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'Springville Regular';
-  src: url('./fonts/Springville-Regular3.otf');
+  font-family: "Springville Regular";
+  src: url("./fonts/Springville-Regular3.otf");
 }
 
 @font-face {
-  font-family: 'Adobe Caslon Pro';
-  src: url('./fonts/ACaslonPro-Regular.otf');
+  font-family: "Adobe Caslon Pro";
+  src: url("./fonts/ACaslonPro-Regular.otf");
 }
 
 $min_width: 320px;
@@ -56,13 +56,13 @@ html {
   justify-content: space-between;
   height: 100%;
   align-items: center;
-  padding-left: calc(100vw *.1);
-  padding-right: calc(100vw *.1);
+  padding-left: calc(100vw * 0.1);
+  padding-right: calc(100vw * 0.1);
 }
 
 .navbar-logo {
   cursor: pointer;
-  background-image: url('./images/logo.png');
+  background-image: url("./images/logo.png");
   background-size: cover;
   height: 34px;
   width: 196px;
@@ -167,12 +167,12 @@ html {
 }
 
 .overlay-text {
-  padding-left: calc(100vw * .1);
-  padding-right: calc(100vw * .1);
+  padding-left: calc(100vw * 0.1);
+  padding-right: calc(100vw * 0.1);
 }
 
 .overlay h1 {
-  font-family: 'Springville Regular', serif;
+  font-family: "Springville Regular", serif;
   font-weight: 400;
   font-size: 60px;
   line-height: 50px;
@@ -181,7 +181,7 @@ html {
 }
 
 .overlay h3 {
-  font-family: 'Adobe Caslon Pro', serif;
+  font-family: "Adobe Caslon Pro", serif;
   font-weight: 400;
   font-size: 30px;
   margin-top: 30px;
@@ -189,7 +189,7 @@ html {
 }
 
 .overlay p {
-  font-family: 'Adobe Caslon Pro', serif;
+  font-family: "Adobe Caslon Pro", serif;
   font-weight: 400;
   font-size: 18px;
   margin-top: -15px;
@@ -236,7 +236,7 @@ html {
 }
 
 .masonry-item-presented {
-  font-family: 'Adobe Caslon Pro', sans-serif;
+  font-family: "Adobe Caslon Pro", sans-serif;
   font-size: 14px;
   margin-top: 0;
   margin-bottom: 50px;
@@ -251,7 +251,7 @@ html {
   align-items: center;
   justify-content: center;
   padding: 75px 0;
-  font-family: 'Arial Bold', sans-serif;
+  font-family: "Arial Bold", sans-serif;
   font-size: 11px;
 }
 
@@ -265,7 +265,6 @@ html {
 }
 
 @media only screen and (min-width: 1440px) {
-
   .navbar-navigation {
     padding-left: 140px;
     padding-right: 140px;
@@ -277,7 +276,6 @@ html {
 }
 
 @media only screen and (min-width: 747px) and (max-width: 1260px) {
-
   .App {
     height: $mobile_page_height;
   }
@@ -291,12 +289,9 @@ html {
     width: 90%;
     column-gap: 5%;
   }
-
-
 }
 
 @media only screen and (min-width: 450px) and (max-width: 747px) {
-
   .App {
     height: $mobile_page_height;
   }
@@ -306,20 +301,20 @@ html {
   }
 
   .carousel {
-    height: calc(100vw * .9);
+    height: calc(100vw * 0.9);
   }
 
   .my-carousel .carousel.carousel-slider {
-    height: calc(100vw * .9);
+    height: calc(100vw * 0.9);
     overflow: hidden;
   }
 
   .image-slide img {
-    height: calc(100vw * .75);
+    height: calc(100vw * 0.75);
   }
 
   .overlay {
-    top: calc(100vw * .4);
+    top: calc(100vw * 0.4);
   }
 
   .overlay h1 {
@@ -335,7 +330,6 @@ html {
   .overlay p {
     font-size: 15px;
     margin-top: -20px;
-
   }
 
   .masonry {
@@ -348,12 +342,9 @@ html {
   .masonry-item-title {
     word-wrap: break-word;
   }
-
-
 }
 
 @media only screen and (max-width: 450px) {
-
   .App {
     height: 2800px;
   }
@@ -363,12 +354,12 @@ html {
   }
 
   .carousel {
-    height: calc(100vw * .9);
+    height: calc(100vw * 0.9);
     top: 50px;
   }
 
   .overlay {
-    top: calc(100vw * .2)
+    top: calc(100vw * 0.2);
   }
 
   .overlay h1 {
@@ -384,11 +375,10 @@ html {
   .overlay p {
     font-size: 15px;
     margin-top: -20px;
-
   }
 
   .my-carousel .carousel .carousel-slider {
-    height: calc(100vw * .9);
+    height: calc(100vw * 0.9);
   }
 
   .navbar {
@@ -405,7 +395,7 @@ html {
   }
 
   .image-slide img {
-    height: calc(100vw * .75);
+    height: calc(100vw * 0.75);
   }
 
   .footer {
@@ -431,12 +421,9 @@ html {
   .hamburger-button {
     width: 20px;
   }
-
-
 }
 
 @media only screen and (max-width: 400px) {
-
   .App {
     height: 2500px;
   }
@@ -446,7 +433,7 @@ html {
   }
 
   .overlay {
-    top: calc(100vw * .17)
+    top: calc(100vw * 0.17);
   }
 
   .masonry {

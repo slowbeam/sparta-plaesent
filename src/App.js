@@ -1,11 +1,10 @@
-import React, { Component } from 'react';
-import './App.scss';
-import NavBar from './components/NavBar';
-import ReactResponsiveCarousel from './components/ReactResponsiveCarousel';
-import Overlay from './components/Overlay';
-import Footer from './components/Footer';
-import MasonryGrid from './containers/MasonryGrid';
-
+import React, { Component } from "react";
+import "./App.scss";
+import NavBar from "./components/NavBar";
+import ReactResponsiveCarousel from "./components/ReactResponsiveCarousel";
+import Overlay from "./components/Overlay";
+import Footer from "./components/Footer";
+import MasonryGrid from "./containers/MasonryGrid";
 
 class App extends Component {
   render() {
@@ -21,7 +20,6 @@ class App extends Component {
         </div>
         <Footer />
       </div>
-
     );
   }
 }
