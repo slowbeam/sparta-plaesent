@@ -1,5 +1,6 @@
 import React from 'react';
 import MasonryItem from '../components/MasonryItem';
+import uuid from 'uuid';
 
 class MasonryGrid extends React.Component {
 
@@ -37,7 +38,7 @@ class MasonryGrid extends React.Component {
       }
     ]
 
-    return itemInfo.map(item => <MasonryItem url={item.img} date={item.date} title={item.title}/>)
+    return itemInfo.map(item => <MasonryItem key={uuid()} url={item.img} date={item.date} title={item.title}/>)
 
 
   }
@@ -46,7 +47,6 @@ class MasonryGrid extends React.Component {
     return (
       <div className="masonry">
         {this.renderMasonryItems()}
-
       </div>
     );
   }
