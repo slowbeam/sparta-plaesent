@@ -11,13 +11,12 @@
 $min_width: 320px;
 $max_width: 1440px;
 $page_height: 2725px;
-$mobile_page_height: 3600px;
+$mobile_page_height: 3400px;
 $med_grey: #767676;
 
 html {
   box-sizing: border-box;
   min-width: $min_width;
-  height: $page_height;
 }
 
 .wrapper {
@@ -356,11 +355,11 @@ html {
 @media only screen and (max-width: 450px) {
 
   .App {
-    height: $mobile_page_height;
+    height: 2800px;
   }
 
   .wrapper {
-    height: $mobile_page_height;
+    height: 2800px;
   }
 
   .carousel {
@@ -431,11 +430,11 @@ html {
 @media only screen and (max-width: 400px) {
 
   .App {
-    height: $mobile_page_height;
+    height: 2500px;
   }
 
   .wrapper {
-    height: $mobile_page_height;
+    height: 2500px;
   }
 
   .overlay {
