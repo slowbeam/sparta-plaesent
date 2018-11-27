@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "autoprefixer": "^9.3.1",
     "node-sass": "^4.10.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
@@ -23,7 +24,10 @@
   "browserslist": [
     ">0.2%",
     "not dead",
-    "not ie <= 11",
+    "IE 11",
+    "last 3 chrome version",
+    "last 3 firefox version",
+    "last 3 safari version",
     "not op_mini all"
   ]
 }
