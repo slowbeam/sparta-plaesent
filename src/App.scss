@@ -84,7 +84,7 @@ html {
 }
 
 .navigation-items div:hover {
-  color: red;
+  color: #e0e0e0;
 }
 
 .hamburger-button {
@@ -202,6 +202,17 @@ html {
   align-items: center;
   justify-content: center;
   padding: 75px 0;
+  font-family: 'Arial Bold', sans-serif;
+  font-size: 11px;
+}
+
+.footer-link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer-link:hover {
+  color: #767676;
 }
 
 @media only screen and (min-width: 1440px) {
@@ -308,5 +319,16 @@ html {
     height: calc(100vw * .75);
   }
 
+  .footer {
+    font-size: 8px;
+    padding: 25px;
+  }
 
+
+}
+
+@media only screen and (max-width: 400px) {
+  .overlay {
+    top: calc(100vw * .16)
+  }
 }
