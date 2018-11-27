@@ -8,6 +8,9 @@
   src: url('./fonts/ACaslonPro-Regular.otf');
 }
 
+$min_width: 320px;
+$max_width: 1440px;
+
 html {
   box-sizing: border-box;
 }
@@ -25,7 +28,7 @@ html {
 .navbar {
   position: sticky;
   width: 100%;
-  max-width: 1440px;
+  max-width: $max_width;
   top: 0;
   left: 0;
   background-color: white;
@@ -37,7 +40,8 @@ html {
   justify-content: space-between;
   height: 100%;
   align-items: center;
-  padding: 0 140px;
+  padding-left: calc(100vw *.1);
+  padding-right: calc(100vw *.1);
 }
 
 .spacer {
@@ -99,9 +103,9 @@ html {
 }
 
 .carousel {
-  max-width: 1440px;
+  max-width: $max_width;
   width: 100vw;
-  height: 680px
+  height: 680px;
 }
 
 .my-carousel .carousel .carousel-slider {
@@ -142,14 +146,14 @@ html {
   display: flex;
   justify-content: flex-start;
   width: 100%;
-  max-width: 1440px;
+  max-width: $max_width;
   z-index: 10;
   top: 25%;
   color: white;
 }
 
 .overlay-text {
-  padding-left: 140px;
+  padding-left: calc(100vw * .1);
 }
 
 .overlay h1 {
@@ -174,4 +178,62 @@ html {
   font-weight: 400;
   font-size: 18px;
   margin-top: -15px;
+}
+
+@media only screen and (min-width: 1440px) {
+
+  .navbar-navigation {
+    padding-left: 140px;
+    padding-right: 140px;
+  }
+
+  .overlay-text {
+    padding-left: 140px;
+  }
+}
+
+@media only screen and (min-width: 415px) and (max-width: 907px) {
+
+  .carousel {
+    height: calc(100vw * .75);
+  }
+
+  .my-carousel .carousel.carousel-slider {
+    height: calc(100vw * .75);
+    overflow: hidden;
+  }
+
+  .image-slide img {
+    height: calc(100vw * .6);
+  }
+
+}
+
+@media only screen and (max-width: 415px) {
+
+  .carousel {
+    height: calc(100vw * .75);
+  }
+
+  .my-carousel .carousel .carousel-slider {
+    height: calc(100vw * .75);
+  }
+
+  .navbar {
+    height: 50px;
+  }
+
+  .navbar-login {
+    display: none;
+  }
+
+  .navbar-phone {
+    display: none;
+  }
+
+  .image-slide img {
+    height: calc(100vw * .6);
+  }
+
+
 }

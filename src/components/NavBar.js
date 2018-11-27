@@ -6,8 +6,8 @@ const NavBar = props => (
     <nav className="navbar-navigation">
       <div className="navbar-logo"></div>
       <div className="navigation-items">
-        <div>212.555.5555</div>
-        <div>LOGIN</div>
+        <div className="navbar-phone">212.555.5555</div>
+        <div className="navbar-login">LOGIN</div>
         <div><HamburgerButton /></div>
       </div>
 
