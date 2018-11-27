@@ -22,7 +22,7 @@ html {
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  height: 1200px;
+  height: 2725px;
   overflow: scroll;
 }
 
@@ -161,7 +161,7 @@ html {
   font-family: 'Springville Regular', serif;
   font-weight: 400;
   font-size: 60px;
-  line-height: 40px;
+  line-height: 50px;
   margin: 0;
   padding: 0;
 }
@@ -212,6 +212,14 @@ html {
 
   .image-slide img {
     height: calc(100vw * .75);
+  }
+
+  .overlay {
+    top: calc(100vw * .4);
+  }
+
+  .overlay-text {
+    padding-right: calc(100vw * .1);
   }
 
 }
