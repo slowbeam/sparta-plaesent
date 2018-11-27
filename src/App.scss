@@ -13,6 +13,7 @@ $max_width: 1440px;
 
 html {
   box-sizing: border-box;
+  min-width: $min_width;
 }
 
 .App {
@@ -192,7 +193,7 @@ html {
   }
 }
 
-@media only screen and (min-width: 415px) and (max-width: 907px) {
+@media only screen and (min-width: 450px) and (max-width: 907px) {
 
   .carousel {
     height: calc(100vw * .75);
@@ -209,7 +210,7 @@ html {
 
 }
 
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 450px) {
 
   .carousel {
     height: calc(100vw * .75);
@@ -221,6 +222,7 @@ html {
 
   .navbar {
     height: 50px;
+    min-width: $min_width;
   }
 
   .navbar-login {
