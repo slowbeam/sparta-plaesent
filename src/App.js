@@ -4,6 +4,7 @@ import NavBar from './components/NavBar';
 import ReactResponsiveCarousel from './components/ReactResponsiveCarousel';
 import Overlay from './components/Overlay';
 import Footer from './components/Footer';
+import MasonryGrid from './containers/MasonryGrid';
 
 
 class App extends Component {
@@ -16,8 +17,8 @@ class App extends Component {
             <Overlay />
             <ReactResponsiveCarousel />
           </div>
+          <MasonryGrid />
         </div>
-        <div className="height-spacer"></div>
         <Footer />
       </div>
 

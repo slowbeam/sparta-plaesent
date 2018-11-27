@@ -10,7 +10,8 @@
 
 $min_width: 320px;
 $max_width: 1440px;
-$page_height: 2725px;
+$page_height: 3200px;
+$med_grey: #767676;
 
 html {
   box-sizing: border-box;
@@ -36,7 +37,7 @@ html {
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  height: $page_height;
+  height: 3600px;
   overflow: scroll;
 }
 
@@ -74,7 +75,7 @@ html {
 .navigation-items {
   display: flex;
   font: bold 11px Arial, sans-serif;
-  color: #767676;
+  color: $med_grey;
   align-items: center;
 }
 
@@ -146,6 +147,7 @@ html {
   text-align: center;
   width: 100%;
   margin: 10px 0;
+  margin-left: -18px;
 }
 
 .my-carousel .carousel .control-dots .dot {
@@ -197,6 +199,58 @@ html {
   margin-top: -15px;
 }
 
+.masonry {
+  flex: 1;
+  margin-top: calc(100vw * .1);
+  column-count: 3;
+  column-gap: 4em;
+  width: 100%;
+  max-width: 1160px;
+}
+
+.masonry-item {
+  background-color: #fff;
+  display: inline-block;
+  margin-bottom: 50px;
+  width: 100%;
+  border-bottom: 1px solid $med_grey;
+  cursor: pointer;
+}
+
+.masonry-img {
+  width: 100%;
+}
+
+.masonry-item-date {
+  font-family: "Arial", sans-serif;
+  font-size: 11px;
+  color: $med_grey;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.masonry-item-title {
+  font-family: "Springville Regular", serif;
+  font-size: 48px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.masonry-item-title:hover {
+  text-decoration: underline;
+}
+
+.masonry-item-presented {
+  font-family: 'Adobe Caslon Pro', sans-serif;
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.presenter-text {
+  text-decoration: underline;
+}
+
 .footer {
   display: flex;
   align-items: center;
@@ -227,9 +281,11 @@ html {
   }
 }
 
-@media only screen and (min-width: 747px) and (max-width: 907px) {
+@media only screen and (min-width: 747px) and (max-width: 1024px) {
 
-
+  .masonry {
+    column-count: 2;
+  }
 
 }
 
@@ -266,6 +322,10 @@ html {
     font-size: 15px;
     margin-top: -20px;
 
+  }
+
+  .masonry {
+    column-count: 2;
   }
 
 
@@ -324,11 +384,19 @@ html {
     padding: 25px;
   }
 
+  .masonry {
+    column-count: 2;
+  }
+
 
 }
 
 @media only screen and (max-width: 400px) {
   .overlay {
     top: calc(100vw * .16)
+  }
+
+  .masonry {
+    column-count: 2;
   }
 }
