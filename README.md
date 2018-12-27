@@ -9,7 +9,7 @@ Sparta Plaesent was built using:
 
 ##
 
-![Sparta Plaesent Demo](https://imgur.com/a/LpIpVah.gif)
+![Sparta Plaesent Demo](https://imgur.com/a/LpIpVah)
 
 ## Installation & Development Setup
 
