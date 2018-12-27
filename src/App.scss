@@ -10,9 +10,6 @@
 
 $min_width: 320px;
 $max_width: 1440px;
-$page_height: 2725px;
-$tablet_page_height: 3600px;
-$mobile_page_height: 5000px;
 $med_grey: #767676;
 
 html {
@@ -20,28 +17,14 @@ html {
   min-width: $min_width;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: $page_height;
-  align-items: center;
-}
-
 .height-spacer {
   flex: 1;
 }
 
-.App {
+.navbar-wrapper {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  overflow: scroll;
+  justify-content: center;
 }
-
 .navbar {
   position: fixed;
   width: 100%;
@@ -173,6 +156,11 @@ html {
   margin-top: -15px;
 }
 
+.masonry-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .masonry {
   margin-top: 75px;
   column-count: 3;
@@ -254,14 +242,6 @@ html {
 }
 
 @media only screen and (min-width: 747px) and (max-width: 1260px) {
-  .App {
-    height: $tablet_page_height;
-  }
-
-  .wrapper {
-    height: $tablet_page_height;
-  }
-
   .masonry {
     column-count: 2;
     width: 90%;
@@ -270,14 +250,6 @@ html {
 }
 
 @media only screen and (min-width: 450px) and (max-width: 747px) {
-  .App {
-    height: $tablet_page_height;
-  }
-
-  .wrapper {
-    height: $tablet_page_height;
-  }
-
   .carousel {
     height: calc(100vw * 0.9);
   }
@@ -323,14 +295,6 @@ html {
 }
 
 @media only screen and (max-width: 450px) {
-  .App {
-    height: $mobile_page_height;
-  }
-
-  .wrapper {
-    height: $mobile_page_height;
-  }
-
   .carousel {
     height: calc(100vw * 0.9);
     top: 50px;
@@ -394,14 +358,6 @@ html {
 }
 
 @media only screen and (max-width: 400px) {
-  .App {
-    height: $mobile_page_height;
-  }
-
-  .wrapper {
-    height: $mobile_page_height;
-  }
-
   .overlay {
     top: calc(100vw * 0.17);
   }

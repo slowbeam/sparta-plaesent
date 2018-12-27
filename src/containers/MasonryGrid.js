@@ -103,7 +103,11 @@ class MasonryGrid extends React.Component {
   };
 
   render() {
-    return <div className="masonry">{this.renderMasonryItems()}</div>;
+    return (
+      <div className="masonry-wrapper">
+        <div className="masonry">{this.renderMasonryItems()}</div>
+      </div>
+    );
   }
 }
 
