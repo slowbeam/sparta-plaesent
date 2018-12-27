@@ -68,7 +68,11 @@ class MasonryGrid extends React.Component {
       }
       col++;
     }
-    return output;
+    if (columns === 1) {
+      return cards;
+    } else {
+      return output;
+    }
   };
 
   renderMasonryItems = () => {
@@ -77,10 +81,10 @@ class MasonryGrid extends React.Component {
       case this.state.windowWidth > 1260:
         columns = 3;
         break;
-      case this.state.windowWidth < 1260:
+      case this.state.windowWidth < 1260 && this.state.windowWidth > 450:
         columns = 2;
         break;
-      case this.state.windowWidth < 450:
+      case this.state.windowWidth <= 450:
         columns = 1;
         break;
       default:
