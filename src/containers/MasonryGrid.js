@@ -4,6 +4,8 @@ import uuid from "uuid";
 
 class MasonryGrid extends React.Component {
   state = {
+    windowWidth: 0,
+    windowHeight: 0,
     cards: [
       {
         img: require("../images/grid/grid-image-1.png"),
@@ -38,8 +40,55 @@ class MasonryGrid extends React.Component {
     ]
   };
 
+  componentDidMount() {
+    this.loadWindowDimensions();
+    window.addEventListener("resize", this.loadWindowDimensions);
+  }
+
+  componentWillUnmount() {
+    this.loadWindowDimensions();
+    window.removeEventListener("resize", this.loadWindowDimensions);
+  }
+
+  loadWindowDimensions = () => {
+    this.setState({
+      windowWidth: window.innerWidth,
+      windowHeight: window.innerHeight
+    });
+  };
+
+  reorder = (cards, columns) => {
+    const cols = columns;
+    const output = [];
+    let col = 0;
+    while (col < cols) {
+      for (let i = 0; i < cards.length; i += cols) {
+        let _val = cards[i + col];
+        if (_val !== undefined) output.push(_val);
+      }
+      col++;
+    }
+    return output;
+  };
+
   renderMasonryItems = () => {
-    return this.state.cards.map(item => (
+    let columns;
+    switch (true) {
+      case this.state.windowWidth > 1260:
+        columns = 3;
+        break;
+      case this.state.windowWidth < 1260:
+        columns = 2;
+        break;
+      case this.state.windowWidth < 450:
+        columns = 1;
+        break;
+      default:
+        break;
+    }
+
+    const sortedCards = this.reorder(this.state.cards, columns);
+    return sortedCards.map(item => (
       <MasonryItem
         key={uuid()}
         url={item.img}

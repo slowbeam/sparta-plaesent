@@ -11,7 +11,8 @@
 $min_width: 320px;
 $max_width: 1440px;
 $page_height: 2725px;
-$mobile_page_height: 3400px;
+$tablet_page_height: 3600px;
+$mobile_page_height: 5000px;
 $med_grey: #767676;
 
 html {
@@ -82,29 +83,6 @@ html {
 
 .navigation-items div:hover {
   color: #e0e0e0;
-}
-
-.hamburger-button {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 25px;
-  width: 10px;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.hamburger-button:focus {
-  outline: none;
-}
-
-.hamburger-button-line {
-  width: 10px;
-  height: 1px;
-  background-color: black;
 }
 
 .carousel-container {
@@ -277,11 +255,11 @@ html {
 
 @media only screen and (min-width: 747px) and (max-width: 1260px) {
   .App {
-    height: $mobile_page_height;
+    height: $tablet_page_height;
   }
 
   .wrapper {
-    height: $mobile_page_height;
+    height: $tablet_page_height;
   }
 
   .masonry {
@@ -293,11 +271,11 @@ html {
 
 @media only screen and (min-width: 450px) and (max-width: 747px) {
   .App {
-    height: $mobile_page_height;
+    height: $tablet_page_height;
   }
 
   .wrapper {
-    height: $mobile_page_height;
+    height: $tablet_page_height;
   }
 
   .carousel {
@@ -346,11 +324,11 @@ html {
 
 @media only screen and (max-width: 450px) {
   .App {
-    height: 2800px;
+    height: $mobile_page_height;
   }
 
   .wrapper {
-    height: 2800px;
+    height: $mobile_page_height;
   }
 
   .carousel {
@@ -404,7 +382,7 @@ html {
   }
 
   .masonry {
-    column-count: 2;
+    column-count: 1;
     width: 90%;
     column-gap: 5%;
     margin-top: 50px;
@@ -413,23 +391,15 @@ html {
   .masonry-item-title {
     word-wrap: break-word;
   }
-
-  .hamburger-button-line {
-    width: 20px;
-  }
-
-  .hamburger-button {
-    width: 20px;
-  }
 }
 
 @media only screen and (max-width: 400px) {
   .App {
-    height: 2500px;
+    height: $mobile_page_height;
   }
 
   .wrapper {
-    height: 2500px;
+    height: $mobile_page_height;
   }
 
   .overlay {
@@ -437,7 +407,7 @@ html {
   }
 
   .masonry {
-    column-count: 2;
+    column-count: 1;
     width: 90%;
     column-gap: 5%;
     margin-top: 50px;
@@ -447,13 +417,5 @@ html {
     font-size: 40px;
     word-wrap: break-word;
     line-height: 45px;
-  }
-
-  .hamburger-button-line {
-    width: 20px;
-  }
-
-  .hamburger-button {
-    width: 20px;
   }
 }
