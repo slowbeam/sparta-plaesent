@@ -7,9 +7,13 @@ Sparta Plaesent was built using:
 * [React-Hamburger-Menu](https://www.npmjs.com/package/react-hamburger-menu)
 * [Autoprefixer](https://www.npmjs.com/package/autoprefixer)
 
-##
+## Demo
 
-![Sparta Plaesent Demo](https://imgur.com/a/LpIpVah)
+![Sparta Plaesent Demo](https://github.com/slowbeam/sparta-plaesent/blob/master/src/images/sparta-gif.gif)
+
+## Live App
+
+View the live app [here](https://sandy-edwards-ideawork.herokuapp.com/).
 
 ## Installation & Development Setup
 
